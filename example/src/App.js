@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { ReactSVGInjector } from 'react-svg-injector';
+import { ReactSVGInjector, Mutate } from 'react-svg-injector';
 
 class App extends Component {
   render() {
@@ -9,7 +9,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <ReactSVGInjector src={logo} className="App-logo" alt="logo">
-            <ReactSVGInjector.Mutate selector="g" fill="#BADA55" />
+            <Mutate selector="g" fill="#BADA55" />
           </ReactSVGInjector>
           <h1 className="App-title">Welcome to React</h1>
         </header>
