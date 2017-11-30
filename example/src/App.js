@@ -26,7 +26,7 @@ class App extends Component {
             <Mutate
               selector="g"
               fill={this.state.color}
-              onclick={this.onClick}
+              onClick={this.onClick}
             />
           </ReactSVGInjector>
           <h1 className="App-title">Welcome to React</h1>
