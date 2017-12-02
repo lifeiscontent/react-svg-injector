@@ -1,6 +1,6 @@
 {
   "name": "react-svg-injector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description":
     "A React component that manipulate SVG and injects it using SVGInjector",
   "main": "dist/index.js",
