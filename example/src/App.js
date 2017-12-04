@@ -3,20 +3,20 @@ import logo from './logo.svg';
 import './App.css';
 import { ReactSVGInjector, Mutate } from 'react-svg-injector';
 
-function RandomColorHex() {
-  return '#' + ((Math.random() * 16777215) | 0).toString(16);
+function randomHexColor() {
+  return '#' + Math.floor(Math.random() * 16777215).toString(16);
 }
 
 class App extends Component {
   state = {
-    color: RandomColorHex()
+    color: randomHexColor()
   };
   constructor(props) {
     super(props);
     this.onClick = this.onClick.bind(this);
   }
   onClick() {
-    this.setState({ color: RandomColorHex() });
+    this.setState({ color: randomHexColor() });
   }
   render() {
     return (
