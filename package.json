@@ -1,24 +1,25 @@
 {
   "name": "react-svg-injector",
   "version": "1.0.2",
-  "description":
-    "A React component that manipulate SVG and injects it using SVGInjector",
+  "description": "A React component that manipulate SVG and injects it using SVGInjector",
   "main": "dist/index.js",
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "babel lib -d dist",
     "test": "jest"
   },
-  "keywords": ["react", "svg"],
-  "author":
-    "Aaron A. Reisman <aaron@lifeiscontent.net> (http://aaronreisman.com/)",
+  "keywords": [
+    "react",
+    "svg"
+  ],
+  "author": "Aaron A. Reisman <aaron@lifeiscontent.net> (http://aaronreisman.com/)",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "7.0.0-beta.32",
-    "@babel/core": "7.0.0-beta.32",
-    "@babel/preset-env": "7.0.0-beta.32",
-    "@babel/preset-react": "7.0.0-beta.32",
-    "@babel/preset-stage-0": "7.0.0-beta.32",
+    "@babel/cli": "7.0.0-beta.34",
+    "@babel/core": "7.0.0-beta.34",
+    "@babel/preset-env": "7.0.0-beta.34",
+    "@babel/preset-react": "7.0.0-beta.34",
+    "@babel/preset-stage-0": "7.0.0-beta.34",
     "babel-core": "7.0.0-beta.3",
     "babel-jest": "21.2.0",
     "enzyme": "3.2.0",
@@ -28,7 +29,7 @@
     "raf": "3.4.0",
     "react": "16.2.0",
     "react-dom": "16.2.0",
-    "react-test-renderer": "16.1.1",
+    "react-test-renderer": "16.2.0",
     "regenerator-runtime": "0.11.0",
     "sinon": "4.1.2",
     "xhr-mock": "1.9.1"
@@ -55,8 +56,14 @@
   "homepage": "https://github.com/lifeiscontent/react-svg-injector#readme",
   "jest": {
     "collectCoverage": true,
-    "testPathIgnorePatterns": ["/node_modules/", "/example/"],
-    "setupFiles": ["raf/polyfill", "./jestSetup"],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/example/"
+    ],
+    "setupFiles": [
+      "raf/polyfill",
+      "./jestSetup"
+    ],
     "coverageThreshold": {
       "global": {
         "branches": 100,
