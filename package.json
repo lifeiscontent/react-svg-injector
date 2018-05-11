@@ -1,18 +1,18 @@
 {
   "name": "react-svg-injector",
   "version": "1.1.7",
-  "description": "A React component that manipulate SVG and injects it using SVGInjector",
+  "description":
+    "A React component that manipulate SVG and injects it using SVGInjector",
   "main": "dist/index.js",
+  "files": ["dist/*"],
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "babel lib -d dist",
     "test": "jest"
   },
-  "keywords": [
-    "react",
-    "svg"
-  ],
-  "author": "Aaron A. Reisman <aaron@lifeiscontent.net> (http://aaronreisman.com/)",
+  "keywords": ["react", "svg"],
+  "author":
+    "Aaron A. Reisman <aaron@lifeiscontent.net> (http://aaronreisman.com/)",
   "license": "MIT",
   "resolutions": {
     "istanbul": "^0.4.5",
@@ -57,14 +57,8 @@
   "homepage": "https://github.com/lifeiscontent/react-svg-injector#readme",
   "jest": {
     "collectCoverage": true,
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/example/"
-    ],
-    "setupFiles": [
-      "raf/polyfill",
-      "./jestSetup"
-    ],
+    "testPathIgnorePatterns": ["/node_modules/", "/example/"],
+    "setupFiles": ["raf/polyfill", "./jestSetup"],
     "coverageThreshold": {
       "global": {
         "branches": 0,
