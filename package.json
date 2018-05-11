@@ -3,11 +3,11 @@
   "version": "0.0.0-development",
   "description":
     "A React component that manipulate SVG and injects it using SVGInjector",
-  "main": "dist/index.js",
-  "files": ["dist/*"],
+  "main": "lib/index.js",
+  "files": ["lib/*"],
   "scripts": {
     "prepublishOnly": "npm run build",
-    "build": "babel ./src -d ./dist",
+    "build": "babel ./src -d ./lib",
     "test": "jest",
     "semantic-release":
       "semantic-release pre && npm publish && semantic-release post"
