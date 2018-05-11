@@ -1,21 +1,20 @@
 {
   "name": "react-svg-injector",
-  "version": "1.1.9",
-  "description": "A React component that manipulate SVG and injects it using SVGInjector",
+  "version": "0.0.0-development",
+  "description":
+    "A React component that manipulate SVG and injects it using SVGInjector",
   "main": "dist/index.js",
-  "files": [
-    "dist/*"
-  ],
+  "files": ["dist/*"],
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "babel ./src -d ./dist",
-    "test": "jest"
+    "test": "jest",
+    "semantic-release":
+      "semantic-release pre && npm publish && semantic-release post"
   },
-  "keywords": [
-    "react",
-    "svg"
-  ],
-  "author": "Aaron A. Reisman <aaron@lifeiscontent.net> (http://aaronreisman.com/)",
+  "keywords": ["react", "svg"],
+  "author":
+    "Aaron A. Reisman <aaron@lifeiscontent.net> (http://aaronreisman.com/)",
   "license": "MIT",
   "resolutions": {
     "istanbul": "^0.4.5",
@@ -40,7 +39,8 @@
     "react-test-renderer": "16.3.2",
     "regenerator-runtime": "0.11.1",
     "sinon": "5.0.7",
-    "xhr-mock": "2.3.2"
+    "xhr-mock": "2.3.2",
+    "semantic-release": "^15.4.0"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",
@@ -52,7 +52,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lifeiscontent/react-svg-injector.git"
+    "url": "https://github.com/lifeiscontent/react-svg-injector.git"
   },
   "bugs": {
     "url": "https://github.com/lifeiscontent/react-svg-injector/issues"
@@ -60,14 +60,8 @@
   "homepage": "https://github.com/lifeiscontent/react-svg-injector#readme",
   "jest": {
     "collectCoverage": true,
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/example/"
-    ],
-    "setupFiles": [
-      "raf/polyfill",
-      "./jestSetup"
-    ],
+    "testPathIgnorePatterns": ["/node_modules/", "/example/"],
+    "setupFiles": ["raf/polyfill", "./jestSetup"],
     "coverageThreshold": {
       "global": {
         "branches": 0,

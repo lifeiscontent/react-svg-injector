@@ -7,12 +7,15 @@
     "react": "16.3.2",
     "react-dom": "16.3.2",
     "react-scripts": "1.1.4",
-    "react-svg-injector": "1.1.8"
+    "react-svg-injector": "1.1.9"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "semantic-release": "15.4.0"
   }
 }
