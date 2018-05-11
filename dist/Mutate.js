@@ -59,7 +59,7 @@ function (_Component) {
     value: function render() {
       var _this = this;
 
-      return _react.default.createElement(_ReactSvgInjector.SVGContext.Consumer, null, function (state) {
+      return _react.default.createElement(_ReactSvgInjector.SvgContext.Consumer, null, function (state) {
         if (state.svg) {
           var _this$props = _this.props,
               selector = _this$props.selector,

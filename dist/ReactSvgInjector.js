@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.ReactSvgInjector = exports.SVGContext = void 0;
+exports.ReactSvgInjector = exports.SvgContext = void 0;
 
 var _reactDom = _interopRequireDefault(require("react-dom"));
 
@@ -40,9 +40,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 var isBrowser = typeof window !== "undefined";
 var SVGInjector = isBrowser ? require("svg-injector") : undefined;
 
-var SVGContext = _react.default.createContext();
+var SvgContext = _react.default.createContext();
 
-exports.SVGContext = SVGContext;
+exports.SvgContext = SvgContext;
 
 var ReactSvgInjector =
 /*#__PURE__*/
@@ -90,7 +90,7 @@ function (_React$Component) {
           children = _this$props.children,
           props = _objectWithoutProperties(_this$props, ["src", "evalScripts", "callback", "children"]);
 
-      return _react.default.createElement(SVGContext.Provider, {
+      return _react.default.createElement(SvgContext.Provider, {
         value: this.state
       }, _react.default.createElement("img", _extends({
         "data-src": src,
