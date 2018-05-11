@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import * as lib from "react-svg-injector";
+import * as src from "react-svg-injector";
 
-console.log(lib);
+console.log(src);
 
 function randomHexColor() {
   return "#" + Math.floor(Math.random() * 16777215).toString(16);
