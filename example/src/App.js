@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { ReactSVGInjector, Mutate } from 'react-svg-injector';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { ReactSVGInjector, Mutate } from "react-svg-injector";
 
 function randomHexColor() {
-  return '#' + Math.floor(Math.random() * 16777215).toString(16);
+  return "#" + Math.floor(Math.random() * 16777215).toString(16);
 }
 
 class App extends Component {
