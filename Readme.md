@@ -1,16 +1,16 @@
-# ReactSVGInjector
+# ReactSvgInjector
 
 ## Example
 
 ```jsx
-import React from 'react';
-import { ReactSVGInjector, Mutate } from 'react-svg-injector';
-import logo from './logo.svg';
+import React from "react";
+import { ReactSvgInjector, Mutate } from "react-svg-injector";
+import logo from "./logo.svg";
 
 const Logo = props => (
-  <ReactSVGInjector src={logo} className="App-logo">
+  <ReactSvgInjector src={logo} className="App-logo">
     <Mutate selector="g" fill="#BADA55" />
-  </ReactSVGInjector>
+  </ReactSvgInjector>
 );
 
 export default Logo;
@@ -18,16 +18,16 @@ export default Logo;
 
 ## API
 
-ReactSVGInjector exports 2 React Components `ReactSVGInjector` and `Mutate`.
+ReactSvgInjector exports 2 React Components `ReactSvgInjector` and `Mutate`.
 
-### ReactSVGInjector
+### ReactSvgInjector
 
 #### props
 
 | name          | type     | description                                                                                                                   |
 | ------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | callback(svg) | function | callback which passes the svg element once it's been loaded                                                                   |
-| evalScripts   | string   | option to tell ReactSVGInjector to eval scripts inside the svg element options are: `always`, `once`, `never` default: `once` |
+| evalScripts   | string   | option to tell ReactSvgInjector to eval scripts inside the svg element options are: `always`, `once`, `never` default: `once` |
 | \*            | any      | all other props that are passed will be merged into the svg element                                                           |
 
 ### Mutate

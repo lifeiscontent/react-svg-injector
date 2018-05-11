@@ -1,6 +1,6 @@
 import { mount } from "enzyme";
 import * as lib from "../lib";
-import { ReactSVGInjector } from "../lib/ReactSvgInjector";
+import { ReactSvgInjector } from "../lib/ReactSvgInjector";
 import { Mutate } from "../lib/Mutate";
 import fs from "fs";
 import path from "path";
@@ -28,8 +28,8 @@ describe("index", () => {
   });
 
   describe("exports", () => {
-    it("is expected to export ReactSVGInjector and Mutate", () => {
-      expect(lib.ReactSVGInjector).toBeDefined();
+    it("is expected to export ReactSvgInjector and Mutate", () => {
+      expect(lib.ReactSvgInjector).toBeDefined();
       expect(lib.Mutate).toBeDefined();
     });
   });
