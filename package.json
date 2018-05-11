@@ -29,6 +29,8 @@
     "@babel/preset-stage-0": "7.0.0-beta.46",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "22.4.3",
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.1.0",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
     "jest": "22.4.3",
@@ -38,9 +40,9 @@
     "react-dom": "16.3.2",
     "react-test-renderer": "16.3.2",
     "regenerator-runtime": "0.11.1",
+    "semantic-release": "^15.4.0",
     "sinon": "5.0.7",
-    "xhr-mock": "2.3.2",
-    "semantic-release": "^15.4.0"
+    "xhr-mock": "2.3.2"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",
@@ -70,5 +72,8 @@
         "statements": 0
       }
     }
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   }
 }
