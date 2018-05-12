@@ -1,5 +1,7 @@
 # ReactSvgInjector
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/lifeiscontent/react-svg-injector.svg)](https://greenkeeper.io/)
+
 ## Example
 
 ```jsx
