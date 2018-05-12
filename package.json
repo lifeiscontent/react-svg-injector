@@ -4,7 +4,7 @@
   "description":
     "A React component that manipulate SVG and injects it using SVGInjector",
   "main": "lib/index.js",
-  "files": ["lib/*"],
+  "files": ["lib"],
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "babel ./src -d ./lib",
