@@ -9,8 +9,7 @@
     "prepublishOnly": "npm run build",
     "build": "babel ./src -d ./lib",
     "test": "jest",
-    "semantic-release":
-      "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release"
   },
   "keywords": ["react", "svg"],
   "author":
@@ -23,10 +22,10 @@
   },
   "devDependencies": {
     "@babel/cli": "7.0.0-beta.46",
-    "@babel/core": "7.0.0-beta.46",
-    "@babel/preset-env": "7.0.0-beta.46",
+    "@babel/core": "7.0.0-beta.47",
+    "@babel/preset-env": "7.0.0-beta.47",
     "@babel/preset-react": "7.0.0-beta.47",
-    "@babel/preset-stage-0": "7.0.0-beta.46",
+    "@babel/preset-stage-0": "7.0.0-beta.47",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "22.4.3",
     "commitizen": "2.9.6",
@@ -73,7 +72,9 @@
       }
     }
   },
-  "czConfig": {
-    "path": "node_modules/cz-conventional-changelog"
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
