@@ -3,7 +3,7 @@
 exports[`index integration renders an SVG 1`] = `
 <div>
   <img
-    data-src="/Users/aaronreisman/Workspace/lifeiscontent/__fixtures__/logo.svg"
+    data-src="../__fixtures__/logo.svg"
     src=""
   />
 </div>

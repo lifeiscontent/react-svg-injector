@@ -1,5 +1,4 @@
 import { renderIntoDocument, wait } from "react-testing-library";
-import path from "path";
 import React from "react";
 import sinon from "sinon";
 import { Mutate } from "../src/Mutate";
@@ -37,7 +36,7 @@ describe("index", () => {
   describe("integration", () => {
     it("renders an SVG", async () => {
       const { container, debug } = renderIntoDocument(
-        <ReactSvgInjector src={path.resolve("../__fixtures__/logo.svg")}>
+        <ReactSvgInjector src="../__fixtures__/logo.svg">
           <Mutate fill="red" selector="g" />
         </ReactSvgInjector>
       );
