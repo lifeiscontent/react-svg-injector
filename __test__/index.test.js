@@ -1,11 +1,10 @@
-import { mount } from "enzyme";
-import * as src from "../src";
-import { ReactSvgInjector } from "../src/ReactSvgInjector";
-import { Mutate } from "../src/Mutate";
-import fs from "fs";
+import { renderIntoDocument, wait } from "react-testing-library";
 import path from "path";
 import React from "react";
 import sinon from "sinon";
+import { Mutate } from "../src/Mutate";
+import { ReactSvgInjector } from "../src/ReactSvgInjector";
+import * as src from "../src";
 
 describe("index", () => {
   let container;
@@ -35,4 +34,14 @@ describe("index", () => {
   });
 
   // @TODO: until this is released, we can't actually test the API changes: https://github.com/airbnb/enzyme/pull/1513
+  describe("integration", () => {
+    it("renders an SVG", async () => {
+      const { container, debug } = renderIntoDocument(
+        <ReactSvgInjector src={path.resolve("../__fixtures__/logo.svg")}>
+          <Mutate fill="red" selector="g" />
+        </ReactSvgInjector>
+      );
+      expect(container).toMatchSnapshot();
+    });
+  });
 });

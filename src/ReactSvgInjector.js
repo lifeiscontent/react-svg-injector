@@ -1,4 +1,3 @@
-import ReactDOM from "react-dom";
 import React from "react";
 import PropTypes from "prop-types";
 
@@ -21,16 +20,17 @@ class ReactSvgInjector extends React.Component {
   };
   componentDidMount() {
     const { evalScripts } = this.props;
-    SVGInjector(this.img, {
+    SVGInjector(this.img.current, {
       evalScripts,
       each: this.callback
     });
   }
+  img = React.createRef();
   render() {
     const { src, evalScripts, callback, children, ...props } = this.props;
     return (
       <SvgContext.Provider value={this.state}>
-        <img data-src={src} ref={img => (this.img = img)} {...props} />
+        <img data-src={src} ref={this.img} {...props} />
         {children}
       </SvgContext.Provider>
     );
