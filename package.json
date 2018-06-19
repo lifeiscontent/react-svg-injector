@@ -48,7 +48,7 @@
     "xhr-mock": "2.4.0"
   },
   "peerDependencies": {
-    "prop-types": "^15.6.0",
+    "prop-types": "^15.6.2",
     "react": "^16.2.0"
   },
   "dependencies": {
