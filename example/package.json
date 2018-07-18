@@ -16,6 +16,6 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "semantic-release": "15.4.1"
+    "semantic-release": "15.8.1"
   }
 }
